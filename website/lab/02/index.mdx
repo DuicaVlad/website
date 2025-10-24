@@ -716,7 +716,7 @@ Make sure you follow these steps:
   architecture, add `probe-rs run` as a [runner](./01#using-cargo-run) and set [`defmt` messages filtering](./01#filtering-messages) to `DEBUG`;
 - add the [linker script](./01#linker-script) file called `memory.x`;
 - add the [build script](./01#build-script) file called `build.rs`;
-- add the required *Embassy* dependencies - take a look at [*Empty* Embassy Firmware](#empty-embassy-firmware) - take a look at [*Empty* Firmware](./01#empty-firmware);
+- add the required *Embassy* dependencies
 - use `defmt_rtt` as a logger, make sure you import it even if you are not using it directly `use ... as _`;
 - use `panic-probe` to provide a panic handler, make sure you import it even if you are not using it directly `use ... as _`;
 - ask the Rust compiler not to depend on the standard library, 
