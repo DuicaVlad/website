@@ -741,7 +741,7 @@ let mut adc = Adc::new(peripherals.ADC, Irqs, ConfigAdc::default());
 Since the RP2s uses a 12‑bit ADC, the maximum representable digital value is 4095.
 :::
 
-Now, we need to initialize the ADC pin we will be using. The Raspberry Pi Pico has 3 pins that support ADC: `ADC0`, `ADC1`, and `ADC2`.
+Now, we need to initialize the ADC pin we will be using. The Raspberry Pi Pico has 4 pins that support ADC: `ADC0`, `ADC1`, `ADC2` and `ADC3`. But only 3 pins ( ADC0`, `ADC1` and `ADC2 ) are usable for external analog input ( ADC3 is used internally ) .
 
 ```rust
 // Initialize ADC pin
